@@ -325,3 +325,51 @@ textarea { min-height: 150px; resize: vertical; }
   h1, .hero h1 { font-size: 2.1rem; }
   h2 { font-size: 1.6rem; }
 }
+
+/* TCM-consult: behoud van de bestaande huisstijl. */
+.reading { max-width: 820px; }
+.eyebrow { font-size: 14px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--primary); }
+.intro-panel { padding: 38px; border-left: 3px solid var(--primary); background: var(--bg); }
+.intro-panel h2 { font-size: 1.8rem; }
+.main-nav a[aria-current="page"] { color: var(--primary); text-decoration: underline; text-underline-offset: 6px; }
+.steps { padding-left: 24px; }
+.steps li { padding: 12px 0 12px 12px; }
+.footer-grid { grid-template-columns: 1.5fr 1fr 1fr; }
+.site-footer h2 { color: #fff; font-family: var(--sans); font-size: 16px; }
+.footer-bottom { color: #c2b8ac; }
+.skip-link { position: absolute; left: 16px; top: -90px; padding: 12px; background: white; z-index: 100; }
+.skip-link:focus { top: 12px; }
+:focus-visible { outline: 3px solid var(--primary); outline-offset: 5px; }
+section[id] { scroll-margin-top: 100px; }
+details { border-bottom: 1px solid var(--line); padding: 20px 0; }
+summary { cursor: pointer; font-weight: 600; }
+details p { margin: 16px 0 0; }
+.note { border-left: 3px solid var(--primary); padding: 18px 24px; background: var(--bg-alt); }
+@media(max-width: 900px) {
+ .header-inner { flex-wrap: wrap; gap: 16px; }
+ .main-nav.is-open { display: block; width: 100%; }
+ .main-nav ul { flex-direction: column; gap: 0; }
+ .main-nav a { display: block; padding: 12px 0; font-size: 14px; }
+ .menu-toggle { font: inherit; border: 1px solid var(--line); padding: 8px 14px; border-radius: 6px; }
+ .footer-grid { grid-template-columns: 1fr; }
+ .hero { padding: 44px 0; }
+ .intro-panel { padding: 26px; }
+ section { padding: 48px 0; }
+ .btn { max-width: 100%; text-align: center; }
+}
+@media(prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* Sfeerbeelden en gereserveerde ruimte voor Eline's eigen portret. */
+.photo-space { margin: 0; min-width: 0; min-height: 280px; aspect-ratio: 4 / 3; background: #eee4d7; border: 1px solid #dbccb9; border-radius: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 28px; color: #75604b; text-align: center; }
+.photo-space.portrait { aspect-ratio: 4 / 5; max-height: 540px; }
+.photo-mark { font-size: 30px; font-weight: 300; line-height: 1; opacity: .6; }
+.photo-space figcaption { font-size: 14px; letter-spacing: .04em; }
+.photo-space img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
+.photo-space.has-image { position: relative; overflow: hidden; padding: 0; border: 0; }
+.photo-space.has-image img { position: absolute; inset: 0; display: block; }
+.with-photo { text-align: left; }
+.with-photo .lead { color: var(--muted); font-size: 1.15rem; }
+.photo-story .intro-panel { border: 0; padding: 12px 0; }
+.main-nav ul { gap: 20px; font-size: 14px; letter-spacing: .025em; text-transform: none; }
+@media (min-width: 901px) and (max-width: 1100px) { .header-inner { flex-wrap: wrap; justify-content: center; gap: 16px; } .main-nav ul { gap: 18px; } }
+@media (max-width: 900px) { .photo-space, .photo-space.portrait { aspect-ratio: 4 / 3; min-height: 220px; max-height: 400px; } .with-photo .two-col { gap: 28px; } }
