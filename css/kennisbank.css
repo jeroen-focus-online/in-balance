@@ -109,3 +109,11 @@
  .kb-layout { padding-bottom:44px; }
 }
 @media(prefers-reduced-motion:reduce) { .kb-card-image img { transition:none; } }
+.kb-topic { padding-bottom: 64px; scroll-margin-top: 120px; }
+.kb-topic-nav { display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
+.kb-topic-nav a { padding:10px 16px; border:1px solid currentColor; border-radius:24px; font-size:14px; text-decoration:none; }
+.kb-topic-nav a:hover, .kb-topic-nav a:focus-visible { background:#fff4e5; }
+.kb-topic-links { list-style:none; padding:0; display:grid; grid-template-columns:1fr 1fr; gap:0 30px; margin:24px 0 0; }
+.kb-topic-links li { border-bottom:1px solid #d8c5b1; }
+.kb-topic-links a { display:block; padding:17px 4px; line-height:1.5; }
+@media(max-width:700px) { .kb-topic-links { grid-template-columns:1fr; } .kb-topic { padding-bottom:38px; } }
