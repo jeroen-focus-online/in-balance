@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://be-inbalance.nl/sitemap.xml
