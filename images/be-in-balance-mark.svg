@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+  <title id="title">Be in Balance beeldmerk</title>
+  <desc id="desc">Een organische letter B opgebouwd uit twee bladeren.</desc>
+  <rect x="3" y="3" width="94" height="94" rx="25" fill="#FAF7F2" stroke="#2C2620" stroke-width="4"/>
+  <path d="M25 18h24c18 0 29 8 29 21 0 9-5 15-14 19 11 3 17 10 17 21 0 15-12 23-32 23H25V18Z" fill="#FFFDF8" stroke="#2C2620" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M25 18h24c18 0 29 8 29 21 0 10-6 17-17 20H25V18Z" fill="#B34E2A"/>
+  <path d="M31 29c16 1 27 6 33 18-14-1-25-6-33-18Z" fill="#FFFDF8"/>
+  <path d="M37 67c16 0 28 6 35 20-16-2-28-8-35-20Z" fill="#B34E2A"/>
+  <path d="M25 59h36" fill="none" stroke="#2C2620" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -75,6 +75,9 @@ p { margin: 0 0 1.1em; }
   margin: 0 auto;
 }
 .logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 700;
@@ -82,6 +85,16 @@ p { margin: 0 0 1.1em; }
   letter-spacing: .02em;
   white-space: nowrap;
 }
+.logo::before {
+  content: "";
+  display: block;
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border-radius: 12px;
+  background: url("/images/be-in-balance-mark.svg") center / contain no-repeat;
+}
+.logo:hover { text-decoration: none; }
 .logo span { color: var(--ink); font-weight: 400; }
 .main-nav ul {
   list-style: none;
@@ -347,6 +360,7 @@ details p { margin: 16px 0 0; }
 .note { border-left: 3px solid var(--primary); padding: 18px 24px; background: var(--bg-alt); }
 @media(max-width: 900px) {
  .header-inner { flex-wrap: wrap; gap: 16px; }
+ .logo::before { width: 42px; height: 42px; flex-basis: 42px; }
  .main-nav.is-open { display: block; width: 100%; }
  .main-nav ul { flex-direction: column; gap: 0; }
  .main-nav a { display: block; padding: 12px 0; font-size: 14px; }
